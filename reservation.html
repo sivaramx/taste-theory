@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reservations | TASTE THEORY</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            TASTE <span>THEORY.</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="reservation.html" class="reservation-btn">
+            Reserve a Table
+        </a>
+
+    </header>
+
+    <main>
+
+        <section class="reservation-heading">
+            <p class="subtitle">YOUR TABLE AWAITS</p>
+            <h1>Make a <span>Reservation.</span></h1>
+            <p>Plan your next unforgettable dining experience.</p>
+        </section>
+
+        <section class="reservation-section">
+
+            <div class="reservation-image">
+                <img
+                    src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1000"
+                    alt="Elegant restaurant dining area">
+            </div>
+
+            <div class="reservation-form-container">
+
+                <h2>Book Your Table</h2>
+
+                <form id="reservationForm">
+
+                    <label for="customerName">Full Name</label>
+                    <input type="text" id="customerName"
+                        placeholder="Your full name" required>
+
+                    <label for="customerEmail">Email Address</label>
+                    <input type="email" id="customerEmail"
+                        placeholder="Your email address" required>
+
+                    <label for="customerPhone">Phone Number</label>
+                    <input type="tel" id="customerPhone"
+                        placeholder="Your phone number"
+                        pattern="[0-9]{10}" maxlength="10" required>
+
+                    <div class="reservation-row">
+
+                        <div>
+                            <label for="bookingDate">Date</label>
+                            <input type="date" id="bookingDate" required>
+                        </div>
+
+                        <div>
+                            <label for="bookingTime">Time</label>
+                            <select id="bookingTime" required>
+                                <option value="">Select time</option>
+                                <option>12:00 PM</option>
+                                <option>01:00 PM</option>
+                                <option>02:00 PM</option>
+                                <option>03:00 PM</option>
+                                <option>06:00 PM</option>
+                                <option>07:00 PM</option>
+                                <option>08:00 PM</option>
+                                <option>09:00 PM</option>
+                                <option>10:00 PM</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <label for="guests">Number of Guests</label>
+                    <select id="guests" required>
+                        <option value="">Select guests</option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6 Guests</option>
+                    </select>
+
+                    <label for="requests">Special Requests</label>
+                    <textarea id="requests" rows="4"
+                        placeholder="Any special requests? (Optional)"></textarea>
+
+                    <button type="submit" class="primary-btn">
+                        Confirm Reservation
+                    </button>
+
+                </form>
+
+                <p id="reservationMessage"></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 TASTE THEORY. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
